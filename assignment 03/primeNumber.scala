@@ -1,4 +1,3 @@
-import scala.io.StdIn.readInt
 object primeNumber extends App {
   def prime(p:Int,n:Int=2):Boolean={
     if(p<=2){
@@ -10,8 +9,9 @@ object primeNumber extends App {
     return prime(p,n+1)
 
     }
-  print("enter number :")
-  var primeNo= readInt()
-  print(prime(primeNo))
+
+  print(prime(5))
+  printf("\n")
+  print(prime(8))
 
 }

@@ -1,4 +1,3 @@
-import scala.io.StdIn.readInt
 object fibonacci extends App {
   def fib(n:Int):Int={
     if(n==0) return 0
@@ -9,9 +8,8 @@ object fibonacci extends App {
     if(n>0) fibSeq(n-1)
     println(fib(n))
   }
-  print("enter number :")
-  var num = readInt()
-  fibSeq(num)
+
+  fibSeq(10)
 
 
 

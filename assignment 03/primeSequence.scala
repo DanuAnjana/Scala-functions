@@ -1,5 +1,3 @@
-import scala.io.StdIn.readInt
-
 object primeSequence extends App {
   def prime(p:Int,n:Int=2):Boolean={
     if(p<=2){
@@ -21,10 +19,8 @@ object primeSequence extends App {
   }
     primeSeq(m-1)
   }
-  print("enter number :")
-  var primeNo= readInt()
   // this will not show given number even if it is a prime number.
   // only print all the prime number less than given number.
-  primeSeq(primeNo)
+  primeSeq(10)
 
 }

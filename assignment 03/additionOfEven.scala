@@ -1,4 +1,3 @@
-import scala.io.StdIn.readInt
 object additionOfEven extends App {
   var sum:Int=0
   def findEven(n:Int): Boolean={
@@ -13,10 +12,9 @@ object additionOfEven extends App {
     }
     sumEven(n-1)
   }
-  print("enter number :")
-  var s= readInt()
+
   // this will not add given number even if it is even.
  // only add all the even number less than given number
-  print(sumEven(s))
+  print(sumEven(10))
 
 }
